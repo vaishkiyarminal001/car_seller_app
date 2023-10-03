@@ -1,0 +1,90 @@
+{
+  "car":[
+
+    {
+      "id": 1,
+      "image": "/assets/Toyota RAV4.jpg",
+      "name": "Toyota RAV4",
+      "date": "2019",
+      "people": "4 People",
+      "type": "Hybrid",
+      "speed": "6.1km/1-liter",
+      "automatic": "Automatic",
+      "price": "$440"
+       
+    },
+
+    {
+        "id": 2,
+        "image": "/assets/BMW 3 Series.jpg",
+        "name": "BMW 3 Series",
+        "date": "2019",
+        "people": "4 People",
+        "type": "Gasoline",
+        "speed": "8.2km/1-liter",
+        "automatic": "Automatic",
+        "price": "$350"
+        
+         
+      },
+
+      {
+        "id": 3,
+        "image": "/assets/Volkswagen T-Cross.jpg",
+        "name": "Volkswagen T-Cross",
+        "date": "2020",
+        "people": "4 People",
+        "type": "Gasoline",
+        "speed": "5.3km/1-liter",
+        "automatic": "Automatic",
+        "price": "$400"
+         
+      },
+
+      {
+        "id": 4,
+        "image": "/assets/Cadillac Escalade.jpg",
+        "name": "Cadillac Escalade",
+        "date": "2020",
+        "people": "4 People",
+        "type": "Gasoline",
+        "speed": "7.7km/1-liter",
+        "automatic": "Automatic",
+        "price": "$620"
+         
+      },
+
+      {
+        "id": 5,
+        "image": "/assets/BMW 4 Series GTI.jpg",
+        "name": "BMW 4 Series GTI",
+        "date": "2021",
+        "people": "4 People",
+        "type": "Gasoline",
+        "speed": "7.6km/1-liter",
+        "automatic": "Automatic",
+        "price": "$530"
+         
+      },
+
+      {
+        "id": 6,
+        "image": "/assets/BMW 4 Series.jpg",
+        "name": "BMW 4 Series",
+        "date": "2019",
+        "people": "4 People",
+        "type": "Gasoline",
+        "speed": "7.2km/1-liter",
+        "automatic": "Automatic",
+        "price": "$490"
+         
+      }
+
+
+    
+  ]
+  
+
+}
+
+
