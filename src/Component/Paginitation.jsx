@@ -1,42 +1,68 @@
 import "./Paginitation.css";
+import { useNavigate, useParams } from "react-router-dom";
 
-export const Paginitation = () =>{
+export const Paginitation = ({pc: [pageCount, setPageCount], pg: [page, setPage] }) => {
+  const totalPage = 10;
+  const pageNumber = Array.from({length: totalPage}, (_, index) => index + 1);
+  
+  // const { pageButton } = useParams(); 
+  // const currentPage = parseInt(pageButton) || 1;
 
-    const totalPage = 10;
-    const currentPage = 2;
+  // const navigate = useNavigate();
 
-    const pageNumber = Array.from({length: totalPage}, (_, index) => index + 1);
-    return(
-        <div className="paginitation">
-            {currentPage > 1 && (
-                
-                <button className="page-button" onClick={() => navigateToPage(currentPage -1)}>
-                    Previous
-                </button>
-            )}
-            
-            {pageNumber.map((pageNumber) =>(
-                <span
-                key={pageNumber}
-                className={`page-number ${pageNumber === currentPage ? 'active' : ''}`}
-                onClick={() => navigateToPage(pageNumber)}
-              >
-                {pageNumber}
-              </span>
+  const navigateToPage = (pageNumber) => {
+   console.log(`Navigate to page ${pageNumber}`);
+   setPage(pageNumber);
+  };
+
+  // const pageNumberArray = Array.from({ length: totalPage }, (_, index) => index + 1);
 
 
-            ))}
+  // const handlePrevious = () =>{
+  //   const newPage = (currentPage - 1);
+  //   setPage(newPage);
+  //   navigateToPage(newPage);
+  // }
 
-{currentPage < totalPage && (
-        <button className="page-button" onClick={() => navigateToPage(currentPage + 1)}>
+
+  // const handleNext = () =>{
+  //   const newPage = (currentPage + 1);
+  //   setPage(newPage);
+  //   navigateToPage(newPage);
+
+  // }
+
+
+  return (
+    <div className="paginitation">
+       {page > 1 && (
+        <button
+          className="page-button"
+          onClick={() => navigateToPage(page - 1)}
+        >
+          Previous
+        </button>
+      )}
+
+      {pageNumber.map((pageNumber) => (
+        <span
+          key={pageNumber}
+          className={`page-number ${pageNumber === page ? "active" : ""}`}
+
+          onClick={() => navigateToPage(pageNumber)}
+        >
+          {pageNumber}
+        </span>
+      ))}
+
+      {page < totalPage && (
+        <button
+          className="page-button"
+          onClick={() => navigateToPage(page + 1)}
+        >
           Next
         </button>
-)}
-        </div>
-    );
-
-    function navigateToPage(pageNumber) {
-       
-        console.log(`Navigating to page ${pageNumber}`);
-      }
+      )}
+    </div>
+  );
 };
