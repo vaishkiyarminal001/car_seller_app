@@ -102,7 +102,7 @@ body{
 
   }
   
-  .MuiSvgIcon-root {
+  .heart {
     font-size: 24px;
     color: rgb(74, 179, 254); 
     margin-right: 10px;
@@ -112,7 +112,14 @@ body{
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
     background-color: rgb(192, 239, 248);
+    /* border: 1px solid red; */
     
+  }
+
+  .icon {
+    margin-right: 5px; 
+    vertical-align: middle; 
+    color:rgb(74, 179, 254);  
   }
   
   

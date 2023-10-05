@@ -1,10 +1,11 @@
 
 .search-bar {
     display: flex;
+    /* border: 1px solid red; */
     width: 91%;
     margin: auto;
     padding: 10px;
-    background-color: #f1f5fb;
+    background-color: #f1f4fa;
     margin-bottom: 2%;
     margin-top: 5px;
     border-radius: 10px;
@@ -13,7 +14,7 @@
 
 
 .search-bar > input {
-    width: 30%;
+    width: 35%;
     padding: 10px;
     border: none;
     /* border: 1px solid red;  */
@@ -42,15 +43,3 @@
 .search-input {
     position: relative; 
 }
-
-
-.search-icon {
-    position: absolute; 
-    right: 10px; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    cursor: pointer; 
-}
-
-
-
