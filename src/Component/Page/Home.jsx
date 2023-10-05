@@ -33,7 +33,7 @@ export default function Home() {
     const carDisplay = async() =>{
 
 
-        let res = await axios.get(`http://localhost:8080/car?q=${search}&_page=${page}&_limit=${limit}`);
+        let res = await axios.get(`https://rentcar-5a8v.onrender.com/car?q=${search}&_page=${page}&_limit=${limit}`);
         setCar(res.data);
         // console.log(res.data);
         
@@ -43,7 +43,7 @@ export default function Home() {
     // function for display pagination or count
 
     const countLength = async () =>{
-        let res = await fetch("http://localhost:8080/car");
+        let res = await fetch("https://rentcar-5a8v.onrender.com/car");
         let data = await res.json();
         setTotalElement(data.length);
         // console.log(data.length);
