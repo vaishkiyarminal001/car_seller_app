@@ -8,6 +8,7 @@ import axios from "axios";
 import MotionPhotosAutoIcon from '@mui/icons-material/MotionPhotosAuto';
 import SpeedIcon from '@mui/icons-material/Speed';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 
 
 export default function Home() {
@@ -121,7 +122,7 @@ const hadleTabulation = (i) =>{
 
                     <div className="car-details">
                     <p><PeopleAltIcon className="icon"/>{e.people}</p>
-                    <p>{e.type}</p>
+                    <p><LocalGasStationIcon className="icon" />{e.type}</p>
                     <p><SpeedIcon className="icon"/>{e.speed}</p>
                     <p><MotionPhotosAutoIcon className="icon"/> {e.automatic}</p>
                     </div>
